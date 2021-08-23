@@ -1,14 +1,14 @@
 @model demomvc.Models.Alumno
 
 @{
-    ViewData["Title"] = "Matricula";
+    ViewData["Title"] = "Matrícula";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 
 <div class="text-center">
-    <h1 class="display-4">Formulario de Matricula</h1>
+    <h1 class="display-4">Formulario de Matrícula</h1>
     
   
     <form asp-controller="Alumno" asp-action="Create">
@@ -18,15 +18,15 @@
     <label asp-for="Apellidos" class="control-label"></label>
     <input asp-for="Apellidos" class="form-control" />
 
-    <label asp-for="Dni" class="control-label"></label>
+    <label asp-for="Dni" class="control-label">DNI</label>
     <input asp-for="Dni" class="form-control" />
 
-    <label asp-for="FechNac" class="control-label"></label>
+    <label asp-for="FechNac" class="control-label">Fecha de Nacimiento</label>
     <input asp-for="FechNac" class="form-control" />
     <br>
 
     <div class="form-group">
-        <label asp-for="Genero" class="control-label"></label>
+        <label asp-for="Genero" class="control-label">Género</label>
         <select asp-for="Genero">
             <option value="M">M</option>
             <option value="F">F</option>
